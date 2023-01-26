@@ -10,7 +10,7 @@ def get_start_command(m):
 
 @bot.message_handler(commands=["answer"])
 def get_text(m):
-        bot.send_message(m.chat.id,ans[random.randint(0, len(ans))])
+        bot.send_message(m.chat.id,ans[random.randint(0, len(ans) - 1)])
 
 @bot.message_handler(commands=["add"])
 def get_text(m):
